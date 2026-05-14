@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="PostmateAI">
+  <rect width="1200" height="630" fill="#ffffff"></rect>
+  <g transform="translate(140 195)">
+    <rect width="240" height="240" rx="52" fill="#3FB37D"></rect>
+    <path d="M62 178L178 62M88 62H178V152" stroke="#0A0D0B" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+  </g>
+  <g transform="translate(440 280)" font-family="ui-sans-serif, system-ui, -apple-system, &#39;Segoe UI&#39;, sans-serif" fill="#0A0D0B">
+    <text x="0" y="0" font-size="92" font-weight="600" letter-spacing="-2.5">PostmateAI</text>
+    <text x="4" y="58" font-size="28" font-weight="400" fill="#5C6260" letter-spacing="0.6">LinkedIn publishing for companies and professionals</text>
+  </g>
+</svg>

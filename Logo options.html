@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostmateAI — Logo options</title>
+<style>
+  body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+
+  /* Shared logo styles */
+  .wm-text {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    color: #0B0F0D;
+  }
+  .wm-text .ai { color: #0F5132; font-weight: 500; }
+  .wm-text-light { color: #ffffff; }
+  .wm-text-light .ai { color: #9FD0B5; }
+
+  /* Logo board layout */
+  .logo-board {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #0B0F0D;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .lb-head {
+    padding: 28px 32px 22px;
+    border-bottom: 1px solid #E7E7E2;
+  }
+  .lb-eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8A938E;
+    margin-bottom: 8px;
+  }
+  .lb-title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #0B0F0D;
+    margin-bottom: 6px;
+  }
+  .lb-desc {
+    font-size: 13.5px;
+    color: #5C6660;
+    line-height: 1.55;
+    max-width: 56ch;
+  }
+
+  .lb-hero {
+    padding: 56px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAF8;
+    border-bottom: 1px solid #E7E7E2;
+    min-height: 200px;
+  }
+
+  .lb-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #E7E7E2;
+    flex: 1;
+  }
+  .lb-cell {
+    background: #ffffff;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 150px;
+  }
+  .lb-cell.dark { background: #0B0F0D; }
+  .lb-cell.warm { background: #F5F4EF; }
+  .lb-cell-label {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8A938E;
+  }
+  .lb-cell.dark .lb-cell-label { color: #6B7570; }
+  .lb-cell-stage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  /* Lockup helpers */
+  .lockup { display: inline-flex; align-items: center; gap: 12px; }
+  .lockup.lg { gap: 14px; }
+  .lockup .wm-text { font-size: 28px; }
+  .lockup.lg .wm-text { font-size: 38px; }
+  .lockup.sm .wm-text { font-size: 18px; }
+
+  /* Favicon row */
+  .fav-row { display: flex; align-items: center; gap: 18px; }
+  .fav-row .fav-stack { display: flex; align-items: center; gap: 10px; }
+  .fav-row .fav-size { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 10px; color: #8A938E; }
+
+  /* Color chips */
+  .chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 10px;
+    background: #FAFAF8;
+    border: 1px solid #E7E7E2;
+    border-radius: 6px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    color: #1F2A24;
+  }
+  .chip-dot { width: 12px; height: 12px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     OPTION 1 — THE PLATE (refined wordmark + glyph)
+     ============================================================ -->
+<template id="option-plate">
+  <div class="logo-board">
+
+    <div class="lb-head">
+      <div class="lb-eyebrow">Option 01 · The Plate</div>
+      <div class="lb-title">Wordmark with rounded plate</div>
+      <div class="lb-desc">A confident, classic SaaS lockup. A bespoke geometric "P" sits on a deep-green rounded plate. Reads as a serious tool by a serious firm. Lowest risk; works everywhere a logo needs to live.</div>
+    </div>
+
+    <!-- Hero lockup -->
+    <div class="lb-hero">
+      <div class="lockup lg">
+        <!-- Glyph: rounded plate with custom geometric P -->
+        <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="PostmateAI mark">
+          <rect width="64" height="64" rx="14" fill="#0F5132"/>
+          <!-- Custom geometric P: straight stem, square-ish bowl -->
+          <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#ffffff"/>
+        </svg>
+        <span class="wm-text">Postmate<span class="ai">AI</span></span>
+      </div>
+    </div>
+
+    <!-- Variations grid -->
+    <div class="lb-grid">
+
+      <div class="lb-cell">
+        <div class="lb-cell-label">Mark only</div>
+        <div class="lb-cell-stage">
+          <svg width="72" height="72" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#0F5132"/>
+            <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#ffffff"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="lb-cell dark">
+        <div class="lb-cell-label">On dark</div>
+        <div class="lb-cell-stage">
+          <div class="lockup">
+            <svg width="44" height="44" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="14" fill="#9FD0B5"/>
+              <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#0B0F0D"/>
+            </svg>
+            <span class="wm-text wm-text-light">Postmate<span class="ai">AI</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell">
+        <div class="lb-cell-label">Monochrome</div>
+        <div class="lb-cell-stage">
+          <div class="lockup">
+            <svg width="44" height="44" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="14" fill="#0B0F0D"/>
+              <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#ffffff"/>
+            </svg>
+            <span class="wm-text" style="color:#0B0F0D">Postmate<span class="ai" style="color:#0B0F0D">AI</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell warm">
+        <div class="lb-cell-label">Favicon scale</div>
+        <div class="lb-cell-stage">
+          <div class="fav-row">
+            <div class="fav-stack">
+              <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#0F5132"/>
+                <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#ffffff"/>
+              </svg>
+              <span class="fav-size">48</span>
+            </div>
+            <div class="fav-stack">
+              <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#0F5132"/>
+                <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#ffffff"/>
+              </svg>
+              <span class="fav-size">32</span>
+            </div>
+            <div class="fav-stack">
+              <svg width="16" height="16" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#0F5132"/>
+                <path d="M21 18h13.8c5.6 0 9.2 3.6 9.2 8.7 0 5.4-3.7 9-9.4 9H27.6V46H21V18zm12.9 12.6c2.5 0 4-1.4 4-3.7 0-2.2-1.5-3.5-4-3.5H27.6v7.2h6.3z" fill="#ffffff"/>
+              </svg>
+              <span class="fav-size">16</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell" style="grid-column: 1 / -1; min-height: 0; padding: 18px 24px;">
+        <div class="lb-cell-label">Palette</div>
+        <div class="chip-row">
+          <span class="chip"><span class="chip-dot" style="background:#0F5132"></span>#0F5132 · Plate</span>
+          <span class="chip"><span class="chip-dot" style="background:#ffffff;border:1px solid #E7E7E2"></span>#FFFFFF · Glyph</span>
+          <span class="chip"><span class="chip-dot" style="background:#0B0F0D"></span>#0B0F0D · Wordmark</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+
+<!-- ============================================================
+     OPTION 2 — THE FOLD (postcard corner-fold)
+     ============================================================ -->
+<template id="option-fold">
+  <div class="logo-board">
+
+    <div class="lb-head">
+      <div class="lb-eyebrow">Option 02 · The Fold</div>
+      <div class="lb-title">Postcard with corner fold</div>
+      <div class="lb-desc">A literal-but-restrained reference to "post". The top-right corner folds back to reveal a chevron of accent green — visually saying <em>send / publish / post</em> without resorting to a paper-plane cliché. Distinctive, ownable.</div>
+    </div>
+
+    <div class="lb-hero">
+      <div class="lockup lg">
+        <!-- Glyph: rounded square (postcard) with corner fold -->
+        <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="PostmateAI mark">
+          <!-- Main card -->
+          <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#0F5132"/>
+          <!-- Folded corner triangle (lighter green) -->
+          <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#9FD0B5"/>
+          <!-- Inner content lines -->
+          <rect x="18" y="32" width="22" height="2.6" rx="1.3" fill="#ffffff" opacity="0.95"/>
+          <rect x="18" y="38" width="16" height="2.6" rx="1.3" fill="#ffffff" opacity="0.65"/>
+        </svg>
+        <span class="wm-text">Postmate<span class="ai">AI</span></span>
+      </div>
+    </div>
+
+    <div class="lb-grid">
+
+      <div class="lb-cell">
+        <div class="lb-cell-label">Mark only</div>
+        <div class="lb-cell-stage">
+          <svg width="80" height="80" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#0F5132"/>
+            <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#9FD0B5"/>
+            <rect x="18" y="32" width="22" height="2.6" rx="1.3" fill="#ffffff" opacity="0.95"/>
+            <rect x="18" y="38" width="16" height="2.6" rx="1.3" fill="#ffffff" opacity="0.65"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="lb-cell dark">
+        <div class="lb-cell-label">On dark</div>
+        <div class="lb-cell-stage">
+          <div class="lockup">
+            <svg width="44" height="44" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#9FD0B5"/>
+              <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#0F5132"/>
+              <rect x="18" y="32" width="22" height="2.6" rx="1.3" fill="#0B0F0D" opacity="0.85"/>
+              <rect x="18" y="38" width="16" height="2.6" rx="1.3" fill="#0B0F0D" opacity="0.5"/>
+            </svg>
+            <span class="wm-text wm-text-light">Postmate<span class="ai">AI</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell">
+        <div class="lb-cell-label">Monochrome (single-color print)</div>
+        <div class="lb-cell-stage">
+          <div class="lockup">
+            <svg width="44" height="44" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#0B0F0D"/>
+              <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#0B0F0D" opacity="0.45"/>
+              <rect x="18" y="32" width="22" height="2.6" rx="1.3" fill="#ffffff"/>
+              <rect x="18" y="38" width="16" height="2.6" rx="1.3" fill="#ffffff" opacity="0.7"/>
+            </svg>
+            <span class="wm-text">Postmate<span class="ai" style="color:#0B0F0D">AI</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell warm">
+        <div class="lb-cell-label">Favicon scale</div>
+        <div class="lb-cell-stage">
+          <div class="fav-row">
+            <div class="fav-stack">
+              <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#0F5132"/>
+                <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#9FD0B5"/>
+                <rect x="18" y="32" width="22" height="2.6" rx="1.3" fill="#ffffff" opacity="0.95"/>
+                <rect x="18" y="38" width="16" height="2.6" rx="1.3" fill="#ffffff" opacity="0.65"/>
+              </svg>
+              <span class="fav-size">48</span>
+            </div>
+            <div class="fav-stack">
+              <!-- At small sizes, drop interior lines -->
+              <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#0F5132"/>
+                <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#9FD0B5"/>
+              </svg>
+              <span class="fav-size">32</span>
+            </div>
+            <div class="fav-stack">
+              <svg width="16" height="16" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 14 H44 L56 26 V46 a4 4 0 0 1 -4 4 H14 a4 4 0 0 1 -4 -4 V18 a4 4 0 0 1 4 -4 Z" fill="#0F5132"/>
+                <path d="M44 14 V22 a4 4 0 0 0 4 4 H56 Z" fill="#9FD0B5"/>
+              </svg>
+              <span class="fav-size">16</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell" style="grid-column: 1 / -1; min-height: 0; padding: 18px 24px;">
+        <div class="lb-cell-label">Palette</div>
+        <div class="chip-row">
+          <span class="chip"><span class="chip-dot" style="background:#0F5132"></span>#0F5132 · Card</span>
+          <span class="chip"><span class="chip-dot" style="background:#9FD0B5"></span>#9FD0B5 · Fold</span>
+          <span class="chip"><span class="chip-dot" style="background:#ffffff;border:1px solid #E7E7E2"></span>#FFFFFF · Lines</span>
+          <span class="chip"><span class="chip-dot" style="background:#0B0F0D"></span>#0B0F0D · Wordmark</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+
+<!-- ============================================================
+     OPTION 3 — THE CASCADE (stacked plates — multi-actor)
+     ============================================================ -->
+<template id="option-cascade">
+  <div class="logo-board">
+
+    <div class="lb-head">
+      <div class="lb-eyebrow">Option 03 · The Cascade</div>
+      <div class="lb-title">Stacked plates</div>
+      <div class="lb-desc">Three offset rounded plates that read as a queue of scheduled posts <em>and</em> as multiple LinkedIn identities being managed at once. Most concept-driven of the three; communicates the product's core verb at a glance.</div>
+    </div>
+
+    <div class="lb-hero">
+      <div class="lockup lg">
+        <!-- Glyph: three stacked plates, diagonally offset -->
+        <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="PostmateAI mark">
+          <rect x="6"  y="18" width="40" height="28" rx="6" fill="#0F5132" opacity="0.22"/>
+          <rect x="12" y="22" width="40" height="28" rx="6" fill="#0F5132" opacity="0.5"/>
+          <rect x="18" y="26" width="40" height="28" rx="6" fill="#0F5132"/>
+          <!-- Active-post mark: small dot on top plate -->
+          <circle cx="50" cy="32" r="2.4" fill="#9FD0B5"/>
+        </svg>
+        <span class="wm-text">Postmate<span class="ai">AI</span></span>
+      </div>
+    </div>
+
+    <div class="lb-grid">
+
+      <div class="lb-cell">
+        <div class="lb-cell-label">Mark only</div>
+        <div class="lb-cell-stage">
+          <svg width="84" height="84" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6"  y="18" width="40" height="28" rx="6" fill="#0F5132" opacity="0.22"/>
+            <rect x="12" y="22" width="40" height="28" rx="6" fill="#0F5132" opacity="0.5"/>
+            <rect x="18" y="26" width="40" height="28" rx="6" fill="#0F5132"/>
+            <circle cx="50" cy="32" r="2.4" fill="#9FD0B5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="lb-cell dark">
+        <div class="lb-cell-label">On dark</div>
+        <div class="lb-cell-stage">
+          <div class="lockup">
+            <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6"  y="18" width="40" height="28" rx="6" fill="#9FD0B5" opacity="0.2"/>
+              <rect x="12" y="22" width="40" height="28" rx="6" fill="#9FD0B5" opacity="0.5"/>
+              <rect x="18" y="26" width="40" height="28" rx="6" fill="#9FD0B5"/>
+              <circle cx="50" cy="32" r="2.4" fill="#0B0F0D"/>
+            </svg>
+            <span class="wm-text wm-text-light">Postmate<span class="ai">AI</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell">
+        <div class="lb-cell-label">Monochrome (single-color print)</div>
+        <div class="lb-cell-stage">
+          <div class="lockup">
+            <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6"  y="18" width="40" height="28" rx="6" fill="#0B0F0D" opacity="0.22"/>
+              <rect x="12" y="22" width="40" height="28" rx="6" fill="#0B0F0D" opacity="0.5"/>
+              <rect x="18" y="26" width="40" height="28" rx="6" fill="#0B0F0D"/>
+              <circle cx="50" cy="32" r="2.4" fill="#ffffff"/>
+            </svg>
+            <span class="wm-text">Postmate<span class="ai" style="color:#0B0F0D">AI</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell warm">
+        <div class="lb-cell-label">Favicon scale (in a plate for clarity)</div>
+        <div class="lb-cell-stage">
+          <div class="fav-row">
+            <!-- At small sizes, cascade is wrapped in a plate so it stays legible -->
+            <div class="fav-stack">
+              <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#0F5132"/>
+                <rect x="12" y="20" width="32" height="22" rx="4.5" fill="#ffffff" opacity="0.35"/>
+                <rect x="18" y="24" width="32" height="22" rx="4.5" fill="#ffffff" opacity="0.7"/>
+                <rect x="24" y="28" width="32" height="22" rx="4.5" fill="#ffffff"/>
+              </svg>
+              <span class="fav-size">48</span>
+            </div>
+            <div class="fav-stack">
+              <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#0F5132"/>
+                <rect x="12" y="20" width="32" height="22" rx="4.5" fill="#ffffff" opacity="0.35"/>
+                <rect x="18" y="24" width="32" height="22" rx="4.5" fill="#ffffff" opacity="0.7"/>
+                <rect x="24" y="28" width="32" height="22" rx="4.5" fill="#ffffff"/>
+              </svg>
+              <span class="fav-size">32</span>
+            </div>
+            <div class="fav-stack">
+              <svg width="16" height="16" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#0F5132"/>
+                <rect x="14" y="22" width="32" height="22" rx="4.5" fill="#ffffff" opacity="0.55"/>
+                <rect x="22" y="28" width="32" height="22" rx="4.5" fill="#ffffff"/>
+              </svg>
+              <span class="fav-size">16</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-cell" style="grid-column: 1 / -1; min-height: 0; padding: 18px 24px;">
+        <div class="lb-cell-label">Palette</div>
+        <div class="chip-row">
+          <span class="chip"><span class="chip-dot" style="background:#0F5132"></span>#0F5132 · Top plate</span>
+          <span class="chip"><span class="chip-dot" style="background:#0F5132;opacity:0.5"></span>50% · Middle</span>
+          <span class="chip"><span class="chip-dot" style="background:#0F5132;opacity:0.22"></span>22% · Back</span>
+          <span class="chip"><span class="chip-dot" style="background:#9FD0B5"></span>#9FD0B5 · Dot</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+<!-- ============================================================
+     ROOT — Mount the canvas with the three options
+     ============================================================ -->
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+
+<script type="text/babel">
+  function TemplateBoard({ tplId }) {
+    const ref = React.useRef(null);
+    React.useEffect(() => {
+      if (!ref.current) return;
+      const tpl = document.getElementById(tplId);
+      if (tpl) {
+        ref.current.innerHTML = '';
+        ref.current.appendChild(tpl.content.cloneNode(true));
+      }
+    }, [tplId]);
+    return <div ref={ref} style={{width:'100%',height:'100%'}} />;
+  }
+
+  function App() {
+    return (
+      <DesignCanvas
+        title="PostmateAI · Logo exploration"
+        subtitle="Three directions. Same brand palette and posture; different visual concepts."
+      >
+        <DCSection
+          id="logos"
+          title="Logo directions"
+          subtitle="Each card shows the primary lockup, mark, on-dark and monochrome variants, favicon scale-down, and palette."
+        >
+          <DCArtboard id="plate"    label="01 · The Plate"    width={640} height={780}>
+            <TemplateBoard tplId="option-plate" />
+          </DCArtboard>
+          <DCArtboard id="fold"     label="02 · The Fold"     width={640} height={780}>
+            <TemplateBoard tplId="option-fold" />
+          </DCArtboard>
+          <DCArtboard id="cascade"  label="03 · The Cascade"  width={640} height={780}>
+            <TemplateBoard tplId="option-cascade" />
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>

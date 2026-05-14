@@ -8,22 +8,22 @@
 <link rel="canonical" href="https://postmateai.com/terms.html" />
 <meta name="robots" content="index,follow" />
 
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="%230F5132"/><path d="M10 9h7.2c3 0 5 1.9 5 4.7 0 2.9-2 4.8-5 4.8H13.1V23H10V9zm6.9 6.8c1.4 0 2.2-.8 2.2-2.1s-.8-2-2.2-2H13.1v4.1h3.8z" fill="%23fff"/></svg>' />
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="%233FB37D"/><path d="M10 22L22 10M13 10H22V19" stroke="%230A0D0B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>' />
 
 <style>
   :root {
-    --accent: #0F5132;
-    --accent-ink: #0B3D26;
-    --accent-soft: #EEF4F0;
-    --accent-line: #D7E5DC;
-    --ink: #0B0F0D;
-    --ink-2: #1F2A24;
-    --muted: #5C6660;
-    --muted-2: #8A938E;
-    --bg: #ffffff;
-    --bg-alt: #FAFAF8;
-    --line: #E7E7E2;
-    --line-strong: #D7D7D1;
+    --accent: #3FB37D;
+    --accent-ink: #A6E2C2;
+    --accent-soft: #11241C;
+    --accent-line: #1F4A36;
+    --ink: #F4F5F2;
+    --ink-2: #C7CCC8;
+    --muted: #8B928D;
+    --muted-2: #5C6260;
+    --bg: #0A0D0B;
+    --bg-alt: #0F1311;
+    --line: #1B201D;
+    --line-strong: #2A2F2C;
     --radius: 10px;
     --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
@@ -45,7 +45,7 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; text-underline-offset: 3px; }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-  ::selection { background: var(--accent); color: #fff; }
+  ::selection { background: var(--accent); color: var(--bg); }
   h1, h2, h3 { margin: 0; letter-spacing: -0.018em; color: var(--ink); }
   p { margin: 0; text-wrap: pretty; }
 
@@ -55,7 +55,7 @@
   /* Nav */
   .nav {
     position: sticky; top: 0; z-index: 50;
-    background: rgba(255,255,255,0.78);
+    background: rgba(10,13,11,0.7);
     backdrop-filter: saturate(160%) blur(10px);
     -webkit-backdrop-filter: saturate(160%) blur(10px);
     border-bottom: 1px solid var(--line);
@@ -68,16 +68,18 @@
   .brand:hover { text-decoration: none; }
   .brand-mark {
     width: 26px; height: 26px; border-radius: 7px;
-    background: var(--accent); color: #fff;
-    display: grid; place-items: center; font-weight: 700; font-size: 13px;
+    background: var(--accent); color: var(--bg);
+    display: grid; place-items: center;
+    flex: 0 0 auto;
   }
+  .brand-mark svg { display: block; }
   .nav-links { display: flex; align-items: center; gap: 28px; }
   .nav-links a { color: var(--ink-2); font-size: 14px; font-weight: 500; }
   .nav-links a:hover { color: var(--ink); text-decoration: none; }
   .nav-cta {
     display: inline-flex; align-items: center; gap: 6px;
     height: 34px; padding: 0 14px; border-radius: 999px;
-    background: var(--ink); color: #fff !important;
+    background: var(--ink); color: var(--bg) !important;
     font-size: 13px; font-weight: 500;
   }
   .nav-cta:hover { background: var(--accent-ink); text-decoration: none; }
@@ -87,7 +89,7 @@
   .legal-header {
     padding: 72px 0 32px;
     background:
-      radial-gradient(900px 360px at 50% -10%, rgba(15,81,50,0.06), transparent 60%),
+      radial-gradient(900px 360px at 50% -10%, rgba(63,179,125,0.10), transparent 60%),
       var(--bg);
     border-bottom: 1px solid var(--line);
   }
@@ -202,7 +204,7 @@
 <header class="nav">
   <div class="container container-wide nav-inner">
     <a href="index.html" class="brand" aria-label="PostmateAI home">
-      <span class="brand-mark" aria-hidden="true">P</span>
+      <span class="brand-mark" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 11L11 5M6.5 5H11V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <span>PostmateAI</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
@@ -300,7 +302,7 @@
 <footer>
   <div class="container container-wide foot">
     <div class="foot-brand">
-      <span class="brand-mark" aria-hidden="true">P</span>
+      <span class="brand-mark" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 11L11 5M6.5 5H11V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <span>© 2026 PostmateAI · 2C Ventures OÜ</span>
     </div>
     <div class="foot-links">

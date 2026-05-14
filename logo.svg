@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="PostmateAI logo">
+  <rect width="512" height="512" fill="#ffffff"></rect>
+  <rect x="128" y="128" width="256" height="256" rx="56" fill="#3FB37D"></rect>
+  <path d="M192 320L320 192M216 192H320V296" stroke="#0A0D0B" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+</svg>
