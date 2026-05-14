@@ -1,7 +1,6 @@
 # PostmateAI — marketing/transparency site
 
-The public landing page for **PostmateAI**, the LinkedIn publishing tool by [2C Ventures](https://2cventures.eu).
-
+The public landing page for **PostmateAI**, the LinkedIn publishing tool 
 This URL is the one submitted in the LinkedIn app's *App Logo & URL* field for the Marketing Developer Platform application. Its job is to give LinkedIn reviewers a clear, factual description of what the product does and exactly how it uses the LinkedIn API.
 
 ## Stack
